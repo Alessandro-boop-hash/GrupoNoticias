@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Paquete de apps que la aplicacion puede lanzar con intents implicitos.
+        Sin este bloque, Android 11+ ocultaria las opciones del selector.
+    -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="text/plain" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="mailto" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO" />
+            <data android:scheme="smsto" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Noticias">
+
+        <!-- Pantalla 1: Login (unica Activity publicada, es el MAIN/LAUNCHER) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Pantalla 2: Noticias -->
+        <activity
+            android:name=".NoticiasActivity"
+            android:exported="false" />
+
+        <!-- Pantalla 3: Perfil -->
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false"
+            android:parentActivityName=".NoticiasActivity" />
+
+        <!-- Pantalla 4: Privacidad -->
+        <activity
+            android:name=".PrivacidadActivity"
+            android:exported="false"
+            android:parentActivityName=".PerfilActivity" />
+
+        <!-- Pantalla 5: Contactos -->
+        <activity
+            android:name=".ContactosActivity"
+            android:exported="false"
+            android:parentActivityName=".PerfilActivity" />
+
+    </application>
+
+</manifest>

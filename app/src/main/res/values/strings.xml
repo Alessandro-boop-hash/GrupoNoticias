@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Aplicacion ===================== -->
+    <string name="app_name">Noticias</string>
+
+    <!-- ===================== Login ===================== -->
+    <string name="login_etiqueta_correo">Correo</string>
+    <string name="login_hint_correo">name@example.com</string>
+    <string name="login_etiqueta_password">Contraseña</string>
+    <string name="login_hint_password">Ingresa tu contraseña</string>
+    <string name="login_boton_ingresar">INGRESAR</string>
+    <string name="login_boton_registrar">REGISTRAR</string>
+    <string name="login_error_correo">Ingresa tu correo electrónico</string>
+    <string name="login_error_password">Ingresa tu contraseña</string>
+    <string name="login_error_correo_invalido">El correo no tiene un formato válido</string>
+    <string name="login_bienvenida">Bienvenido %1$s</string>
+    <string name="login_registro_simulado">Registro simulado: la cuenta %1$s quedó creada en el dispositivo</string>
+
+    <!-- ===================== Noticias ===================== -->
+    <string name="noticias_titulo">Noticias</string>
+    <string name="noticias_descripcion_compartir">Compartir “%1$s” mediante otra aplicación</string>
+    <string name="noticias_seleccionada">Noticia seleccionada: %1$s. Pulsa compartir para enviarla.</string>
+    <string name="noticias_vacio">No hay noticias para compartir</string>
+    <string name="compartir_titulo_elegir">Compartir noticia</string>
+    <string name="noticias_buscador_titulo">Buscar noticias</string>
+    <string name="noticias_buscador_mensaje">Escribe el título de la noticia a buscar</string>
+    <string name="noticias_buscador_vacio">No se encontraron noticias para “%1$s”</string>
+    <string name="noticias_buscador_lista">%1$d noticias encontradas para “%2$s”</string>
+    <string name="noticias_actualizadas">Noticias actualizadas</string>
+
+    <!-- ===================== Menu de opciones ===================== -->
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_buscar">Buscar</string>
+    <string name="menu_correo">Correo</string>
+    <string name="menu_actualizar">Actualizar noticias</string>
+    <string name="menu_salir">Cerrar sesión</string>
+    <string name="menu_privacidad">Privacidad</string>
+    <string name="menu_contactos">Contactos</string>
+    <string name="menu_central">Central de ayuda</string>
+    <string name="menu_acerca">Acerca de</string>
+    <string name="menu_ayuda">Ayuda</string>
+    <string name="menu_todos">Marcar todos como leídos</string>
+
+    <!-- ===================== Menú contextual de contactos ===================== -->
+    <string name="contextual_menu_titulo">Opciones de contacto</string>
+    <string name="contextual_llamar">Llamar</string>
+    <string name="contextual_mensaje">Enviar mensaje</string>
+    <string name="contextual_perfil">Ver perfil del contacto</string>
+    <string name="sin_registro_llamada">No hay aplicación de llamadas instalada</string>
+    <string name="sin_registro_mensaje">No hay aplicación de mensajes instalada</string>
+    <string name="contacto_perfil_titulo">%1$s · %2$s</string>
+    <string name="contacto_perfil_cuerpo">Puesto: %1$s\nTeléfono: %2$s</string>
+
+    <!-- ===================== Perfil ===================== -->
+    <string name="perfil_titulo">Perfil</string>
+    <string name="perfil_nombre">Alessandro Josué Rojas Camacho</string>
+    <string name="perfil_ubicacion">Perú</string>
+    <string name="perfil_opcion_informacion">Información</string>
+    <string name="perfil_opcion_notificaciones">Notificaciones</string>
+    <string name="perfil_opcion_favoritos">Favoritos</string>
+    <string name="perfil_boton_cerrar">CERRAR SESIÓN</string>
+    <string name="perfil_informacion_titulo">Información</string>
+    <string name="perfil_informacion_cuerpo">Alessandro Josué Rojas Camacho desarrolla la aplicación News como parte de la Práctica Calificada 02 de Programación en Móviles. Desde Perú consulta el listado de noticias, comparte los artículos que le interesan y gestiona los contactos de la redacción.</string>
+    <string name="perfil_informacion_correo">Sesión iniciada como: %1$s</string>
+    <string name="perfil_notificaciones_titulo">Notificaciones</string>
+    <string name="perfil_notificaciones_cuerpo">Tienes 3 notificaciones sin leer de la redacción de noticias.</string>
+    <string name="perfil_favoritos_titulo">Favoritos</string>
+    <string name="perfil_favoritos_cuerpo">Aún no has guardado noticias en favoritos.</string>
+    <string name="perfil_sesion_cerrada">Sesión cerrada correctamente</string>
+    <string name="perfil_buscador_mensaje">La búsqueda de noticias está disponible en la pantalla de Noticias.</string>
+    <string name="perfil_correo_destinatario">redaccion@news.com</string>
+    <string name="perfil_correo_asunto">Contacto desde la app Noticias</string>
+    <string name="perfil_correo_cuerpo">Hola equipo de Noticias, quiero escribirles sobre la edición de hoy.</string>
+
+    <!-- ===================== Privacidad ===================== -->
+    <string name="privacidad_titulo">Privacidad</string>
+    <string name="privacidad_encabezado">Reglas de Privacidad</string>
+    <string name="privacidad_p1">La Política se aplica a todos los datos personales que los usuarios proporcionen de manera directa o a través de una tercera persona (encargado) cuando éste actúa según las instrucciones del usuario.</string>
+    <string name="privacidad_p2">Los datos personales de los usuarios que emplean nuestros canales web son almacenados en sus correspondientes bancos de datos, los cuales se encuentran registrados ante la Autoridad Nacional de Protección de Datos Personales.</string>
+
+    <!-- ===================== Contactos ===================== -->
+    <string name="contactos_titulo">Contactos</string>
+    <string name="contactos_encabezado">Listado de Contactos</string>
+    <string name="contactos_pista">Mantén presionado un contacto para ver sus opciones</string>
+    <string name="contactos_marcados">Todos los contactos fueron marcados como leídos</string>
+
+    <!-- ===================== Diálogos / avisos ===================== -->
+    <string name="dialogo_ok">Entendido</string>
+    <string name="dialogo_cancelar">Cancelar</string>
+    <string name="dialogo_buscar">Buscar</string>
+    <string name="dialogo_acerca_titulo">Acerca de Noticias</string>
+    <string name="dialogo_acerca_cuerpo">News · Versión %1$s\n\nPractica Calificada 02 - Programación en Móviles\nDesarrollo de Android con XML, intents explícitos e implícitos, menú de opciones y menú contextual.</string>
+    <string name="dialogo_ayuda_titulo">Central de ayuda</string>
+    <string name="dialogo_ayuda_cuerpo">1. Inicia sesión con tu correo y contraseña.\n2. Usa el icono de persona para abrir tu perfil.\n3. Comparte cualquier noticia con el botón azul.\n4. Abre Contactos y mantén presionado un contacto para llamarlo o escribirle.</string>
+
+    <!-- ===================== Contenido ===================== -->
+    <string name="contacto_telefono">+51 987 987 987</string>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ===================== PANTALLA 1: LOGIN =====================
+     Maquetado completo en XML, con ScrollView para que el formulario
+     siga siendo accesible cuando aparece el teclado en pantalla. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margen_horizontal"
+        android:paddingEnd="@dimen/margen_horizontal"
+        android:paddingTop="@dimen/margen_vertical"
+        android:paddingBottom="@dimen/margen_vertical">
+
+        <!-- Logotipo de la aplicacion -->
+        <ImageView
+            android:id="@+id/imagenLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="40dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_news" />
+
+        <!-- Campo: correo electronico -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_etiqueta_correo"
+            android:textAppearance="@style/TextAppearance.Noticias.Etiqueta" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/panelCorreo"
+            style="@style/Widget.Noticias.Campo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separacion_pequena"
+            android:hint="@string/login_hint_correo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/campoCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="emailAddress"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/azul_marino"
+                tools:text="name@example.com" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo: contrasena -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separacion"
+            android:text="@string/login_etiqueta_password"
+            android:textAppearance="@style/TextAppearance.Noticias.Etiqueta" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/panelPassword"
+            style="@style/Widget.Noticias.Campo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/separacion_pequena"
+            android:hint="@string/login_hint_password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/campoPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/azul_marino" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Botones: ingreso y registro -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonIngresar"
+            style="@style/Widget.Noticias.Boton"
+            android:layout_marginTop="@dimen/margen_vertical"
+            android:text="@string/login_boton_ingresar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botonRegistrar"
+            style="@style/Widget.Noticias.Boton"
+            android:layout_marginTop="12dp"
+            android:text="@string/login_boton_registrar"
+            app:backgroundTint="@color/verde_registro" />
+
+    </LinearLayout>
+</ScrollView>

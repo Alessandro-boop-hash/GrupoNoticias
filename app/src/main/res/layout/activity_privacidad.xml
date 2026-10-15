@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ===================== PANTALLA 4: PRIVACIDAD =====================
+     Destino de la opcion "Privacidad" del menu de opciones de Perfil. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contenedorPrivacidad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/barraPrivacidad"
+        style="@style/Widget.Noticias.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alto_barra"
+        app:navigationIcon="@drawable/ic_regresar"
+        app:navigationIconTint="@color/azul_marino"
+        app:title="@string/privacidad_titulo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margen_horizontal"
+            android:paddingEnd="@dimen/margen_horizontal"
+            android:paddingTop="@dimen/separacion"
+            android:paddingBottom="@dimen/margen_vertical">
+
+            <TextView
+                android:id="@+id/encabezadoPrivacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/separacion"
+                android:gravity="center"
+                android:text="@string/privacidad_encabezado"
+                android:textAppearance="@style/TextAppearance.Noticias.TituloPantalla" />
+
+            <TextView
+                android:id="@+id/politicaPuntoUno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacidad_p1"
+                android:textAppearance="@style/TextAppearance.Noticias.Cuerpo"
+                android:textSize="@dimen/texto_cuerpo" />
+
+            <TextView
+                android:id="@+id/politicaPuntoDos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/separacion"
+                android:text="@string/privacidad_p2"
+                android:textAppearance="@style/TextAppearance.Noticias.Cuerpo"
+                android:textSize="@dimen/texto_cuerpo" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

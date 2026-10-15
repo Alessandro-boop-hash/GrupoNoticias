@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ===================== PANTALLA 5: CONTACTOS =====================
+     La lista usa registerForContextMenu(): al mantener presionado un
+     contacto se abre el menu contextual (Llamar / Enviar mensaje). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorContactos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/barraContactos"
+        style="@style/Widget.Noticias.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alto_barra"
+        app:navigationIcon="@drawable/ic_regresar"
+        app:navigationIconTint="@color/azul_marino"
+        app:title="@string/contactos_titulo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/separacion"
+        android:text="@string/contactos_encabezado"
+        android:textAppearance="@style/TextAppearance.Noticias.TituloPantalla" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="@dimen/margen_horizontal"
+        android:paddingEnd="@dimen/margen_horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:text="@string/contactos_pista"
+        android:textAppearance="@style/TextAppearance.Noticias.Cuerpo" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaContactos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/separacion"
+        tools:listitem="@layout/item_contacto" />
+
+</LinearLayout>

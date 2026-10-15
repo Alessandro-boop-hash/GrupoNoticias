@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tarjeta de una noticia: imagen, chip con el titulo y resumen. -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tarjetaNoticia"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/separacion"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/blanco"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imagenNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alto_imagen_noticia"
+            android:background="@drawable/bg_imagen_redondeado"
+            android:clipToOutline="true"
+            android:contentDescription="@string/noticias_titulo"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/img_noticia_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="@dimen/separacion_pequena"
+                android:background="@drawable/bg_chip_icono"
+                android:contentDescription="@string/noticias_titulo"
+                android:padding="2dp"
+                android:src="@drawable/ic_noticia"
+                app:tint="@color/blanco" />
+
+            <TextView
+                android:id="@+id/tituloNoticia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="@style/TextAppearance.Noticias.Etiqueta"
+                android:textSize="15sp"
+                tools:text="Apple Vision Pro" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resumenNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textAppearance="@style/TextAppearance.Noticias.Cuerpo"
+            tools:text="El visor espacial de 3.500 dolares redefine la realidad aumentada." />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

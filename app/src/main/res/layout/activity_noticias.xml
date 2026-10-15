@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ===================== PANTALLA 2: NOTICIAS =====================
+     CoordinatorLayout para que la lista se desplace por debajo de la barra
+     superior y el boton flotante de compartir quede fijo en la esquina. -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorNoticias"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris_fondo">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blanco"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/barraNoticias"
+            style="@style/Widget.Noticias.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/alto_barra"
+            app:title="@string/noticias_titulo" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaNoticias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/margen_horizontal"
+        android:paddingEnd="@dimen/margen_horizontal"
+        android:paddingTop="@dimen/separacion"
+        android:paddingBottom="88dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_noticia" />
+
+    <!-- Boton flotante: intent implicito de compartir -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/botonCompartir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margen_vertical"
+        android:contentDescription="@string/contextual_menu_titulo"
+        android:src="@drawable/ic_compartir"
+        app:backgroundTint="@color/cyan_primario"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:tint="@color/blanco" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

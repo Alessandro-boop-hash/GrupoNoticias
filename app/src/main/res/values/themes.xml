@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema unico de la aplicacion (los cinco Activities lo comparten). -->
+    <style name="Theme.Noticias" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/cyan_primario</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorPrimaryContainer">@color/cyan_primario_claro</item>
+        <item name="colorOnPrimaryContainer">@color/azul_marino</item>
+
+        <item name="colorSecondary">@color/azul_marino</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+
+        <item name="colorSurface">@color/blanco</item>
+        <item name="colorOnSurface">@color/azul_marino</item>
+        <item name="android:colorBackground">@color/blanco</item>
+
+        <!-- Pantallas activas: los iconos de la barra del sistema van en oscuro. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+    </style>
+
+</resources>

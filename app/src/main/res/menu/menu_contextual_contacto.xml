@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ===================== MENU CONTEXTUAL =====================
+     Se infla desde ContactosActivity.onCreateContextMenu() al mantener
+     presionado un contacto de la lista. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/contextualLlamar"
+        android:icon="@drawable/ic_llamar"
+        android:title="@string/contextual_llamar" />
+
+    <item
+        android:id="@+id/contextualMensaje"
+        android:icon="@drawable/ic_mensaje"
+        android:title="@string/contextual_mensaje" />
+
+    <item
+        android:id="@+id/contextualPerfil"
+        android:icon="@drawable/ic_persona"
+        android:title="@string/contextual_perfil" />
+
+</menu>

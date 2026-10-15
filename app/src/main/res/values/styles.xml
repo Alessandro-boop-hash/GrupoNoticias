@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Barra superior (Toolbar) ===================== -->
+    <style name="Widget.Noticias.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/blanco</item>
+        <item name="titleTextColor">@color/azul_marino</item>
+        <item name="subtitleTextColor">@color/gris_texto</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:layout_height">@dimen/alto_barra</item>
+    </style>
+
+    <!-- ===================== Botones ===================== -->
+    <style name="Widget.Noticias.Boton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alto_boton</item>
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:textSize">@dimen/texto_etiqueta</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="cornerRadius">@dimen/radio_boton</item>
+        <item name="backgroundTint">@color/cyan_primario</item>
+        <item name="rippleColor">@color/blanco</item>
+    </style>
+
+    <!-- ===================== Campos de texto ===================== -->
+    <style name="Widget.Noticias.Campo" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/azul_marino_claro</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxCornerRadiusTopStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/radio_boton</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/radio_boton</item>
+        <item name="hintTextColor">@color/azul_marino</item>
+    </style>
+
+    <!-- ===================== Tipografias ===================== -->
+    <style name="TextAppearance.Noticias.Etiqueta" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/azul_marino</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/texto_cuerpo</item>
+    </style>
+
+    <style name="TextAppearance.Noticias.TituloPantalla" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/azul_marino</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/texto_subtitulo</item>
+    </style>
+
+    <style name="TextAppearance.Noticias.Cuerpo" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/gris_texto</item>
+        <item name="android:textSize">@dimen/texto_pequeno</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ===================== Medidas ===================== -->
+    <dimen name="margen_vertical">24dp</dimen>
+    <dimen name="margen_horizontal">20dp</dimen>
+    <dimen name="separacion">16dp</dimen>
+    <dimen name="separacion_pequena">8dp</dimen>
+    <dimen name="radio_boton">4dp</dimen>
+    <dimen name="alto_boton">52dp</dimen>
+    <dimen name="texto_titulo">28sp</dimen>
+    <dimen name="texto_subtitulo">18sp</dimen>
+    <dimen name="texto_cuerpo">14sp</dimen>
+    <dimen name="texto_etiqueta">13sp</dimen>
+    <dimen name="texto_pequeno">12sp</dimen>
+    <dimen name="alto_barra">56dp</dimen>
+    <dimen name="alto_imagen_noticia">190dp</dimen>
+    <dimen name="tamano_avatar">96dp</dimen>
+    <dimen name="tamano_icono">24dp</dimen>
+
+</resources>

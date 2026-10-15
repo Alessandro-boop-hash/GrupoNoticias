@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menu de opciones de la pantalla de Privacidad. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuAyuda"
+        android:title="@string/menu_ayuda"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuAcerca"
+        android:title="@string/menu_acerca"
+        app:showAsAction="never" />
+
+</menu>

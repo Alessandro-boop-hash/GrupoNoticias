@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================= Paleta institucional =================
+         Colores tomados del diseno de referencia (logo NEWS y mockups). -->
+
+    <color name="cyan_primario">#00BCD4</color>
+    <color name="cyan_primario_claro">#E0F7FA</color>
+
+    <color name="azul_marino">#1A237E</color>
+    <color name="azul_marino_claro">#5C6BC0</color>
+
+    <color name="verde_registro">#43A047</color>
+
+    <color name="blanco">#FFFFFF</color>
+
+    <color name="gris_texto">#5F6368</color>
+    <color name="gris_fondo">#F1F3F4</color>
+    <color name="gris_avatar">#E0E0E0</color>
+
+</resources>
